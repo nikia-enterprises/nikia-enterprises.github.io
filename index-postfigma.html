@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nikia Notary</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-mgmt.css">
         <!-- ✅ Tailwind via CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Optional: customize Tailwind config inline -->
@@ -12,9 +16,9 @@
             theme: {
                 extend: {
                     colors: {
-                    primary: '#1e40af', // Deep blue
-                    accent: '#f59e0b',  // Amber
-                    greyed: 'grey'
+                        primary: '#1e40af', // Deep blue
+                        accent: '#f59e0b',  // Amber
+                        greyed: 'grey'
                     },
                 },
             },
@@ -22,72 +26,72 @@
         </script>
     </head>
     <body>
-        <nav class="flex flex-row">
-            <div id="logo-title-group" class="p-4 flex flex-row justify-around">
-                <img src="imgs/nikia-logo-min.png" alt="">
-                <p class="text-sm">Nikia Enterprises LLC</p>
+        <nav class="px-8 flex flex-row ">
+            <div id="logo-title-group" class="py-4 flex gap-4 flex-row justify-around items-center">
+                <img src="imgs/nikia-logo-min.png" alt="" class="w-[2rem] h-[2rem]">
+                <p class="text-sm h-min font-inria-serif-regular">Nikia Enterprises LLC</p>
             </div>
             <div id="dropdown-btn"></div>
         </nav>
         <div id="section-container" class="flex flex-col gap-16">
             <section class="px-8 my-6 flex flex-col" id="hero">
-                <h1 class="text-5xl">Sign with Confidence</h1>
-                <p class="text-md">Trusted mobile rotary serving Chicago and South Suburbs - we come to you, on your schedule</p>
-                <button class="bg-white">Book Now</button>
+                <h1 class="font-inria-serif-regular text-5xl">Sign with Confidence</h1>
+                <p class="font-karla text-md">Trusted mobile rotary serving Chicago and South Suburbs - we come to you, on your schedule</p>
+                <button class="bg-white font-inria-serif-regular">Book Now</button>
             </section>
             <section class="px-8 my-6 flex flex-col" id="what-we-do">
-                <h3 class="text-3xl">What we do</h3>
-                <p class="text-md">We provide fast, reliable notarization for personal, legal, and business documents. From real estate closings to power of attorney forms, we make signing simple, secure, and stress-free.</p>
-                <a href="about.html">Meet the C.E.O &gt;&gt;</a>
+                <h3 class="font-inria-serif-regular text-3xl">What we do</h3>
+                <p class="text-md font-karla">We provide fast, reliable notarization for personal, legal, and business documents. From real estate closings to power of attorney forms, we make signing simple, secure, and stress-free.</p>
+                <a href="about.html" class="font-inria-serif-regular">Meet the C.E.O &gt;&gt;</a>
             </section>
             <section class="px-8 my-6 flex flex-col" id="how-it-works">
-                <h3 class="text-3xl">How it works</h3>
+                <h3 class="font-inria-serif-regular text-3xl">How it works</h3>
                 <div class="px-8 flex flex-row justify-center items-center">
-                    <span class="text-xl">1</span>
-                    <p class="text-md">Book your appointment</p>
+                    <span class="text-xl font-inria-serif-regular">1</span>
+                    <p class="text-md font-karla">Book your appointment</p>
                 </div>
                 <div class="px-8 flex flex-row justify-center items-center">
-                    <span class="text-xl">2</span>
-                    <p class="text-md">Meet your Notary</p>
+                    <span class="text-xl font-inria-serif-regular">2</span>
+                    <p class="text-md font-karla">Meet your Notary</p>
                 </div>
                 <div class="px-8 flex flex-row justify-center items-center">
-                    <span class="text-xl">3</span>
-                    <p class="text-md">Get it Notarized</p>
+                    <span class="text-xl font-inria-serif-regular">3</span>
+                    <p class="text-md font-karla">Get it Notarized</p>
                 </div>
-                <a href="schedule.html"><button class="bg-primary w-100 p-2">Book Now</button></a>
+                <a href="schedule.html"><button class="bg-primary w-100 p-2 font-inria-serif-regular">Book Now</button></a>
             </section>
             <section id="testimonies" class="px-8 py-16 flex flex-col justify-center items-center">
                 <div id="stars"></div>
-                <p class="text-lg">Nikia Enterprises LLC brings a reassuring presence and meticulous eye to each document she handles.</p>
-                <p class="text-md">Schwartz Jambois</p>
-                <p class="text-sm text-secondary">Law Firm</p>
+                <p class="text-xl font-karla">Nikia Enterprises LLC brings a reassuring presence and meticulous eye to each document she handles.</p>
+                <p class="text-md font-karla">Schwartz Jambois</p>
+                <p class="text-sm text-secondary font-karla">Law Firm</p>
             </section>
         </div>
         <footer class="p-8 gap-8 flex flex-col bg-primary">
             <div id="links" class="flex flex-col">
-                <h4 class="text-2xl">Links</h4>
-                <a href="#" class="text-white">Home</a>
-                <a href="schedule.html" class="text-greyed">Book Nikia</a>
-                <a href="about.html" class="text-greyed">Meet your Notary</a>
+                <h4 class="text-2xl font-inria-serif-regular">Links</h4>
+                <a href="#" class="text-white font-karla">Home</a>
+                <a href="schedule.html" class="text-greyed font-karla">Book Nikia</a>
+                <a href="about.html" class="text-greyed font-karla">Meet your Notary</a>
             </div>
             <div id="contact-info">
-                <h4 class="text-2xl">Contact</h4>
+                <h4 class="text-2xl font-inria-serif-regular">Contact</h4>
                 <div class="flex flex-row">
                     <span></span>
-                    <p class="text-white">312 966-9151</p>
+                    <p class="text-white font-karla">312 966-9151</p>
                 </div>
                 <div class="flex flex-row">
                     <span></span>
-                    <p class="text-white">Mobile Notary Services</p>
+                    <p class="text-white font-karla">Mobile Notary Services</p>
                 </div>
                 <div class="flex flex-row">
                     <span></span>
-                    <p class="text-white">DejahCobbs2016@gmail.com</p>
+                    <p class="text-white font-karla">DejahCobbs2016@gmail.com</p>
                 </div>
             </div>
             <div id="copyright" class="flex flex-row justify-center">
-                <p class="text-white">Nikia Enterprises LLC</p>
+                <p class="text-white font-karla">Nikia Enterprises LLC</p>
             </div>
         </footer>
-    
-</body></html>
+        
+    </body></html>
