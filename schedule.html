@@ -1,1 +1,123 @@
-html:5
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nikia Notary</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-mgmt.css">
+        <!-- ✅ Tailwind via CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Optional: customize Tailwind config inline -->
+        <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        colors: {
+        primary: '#B63811', // Deep blue
+        accent: '#f59e0b',  // Amber
+        greyed: 'rgb(189 189 189 / 78%)'
+        },
+        },
+        },
+        }
+        </script>
+    </head>
+    <body>
+        <nav class="px-8 flex flex-row items-center justify-between">
+            <div id="logo-title-group" class="py-4 flex gap-4 flex-row justify-around items-center">
+                <img src="imgs/nikia-logo-min.png" alt="" class="w-[2rem] h-[2rem]">
+                <p class="text-sm h-min font-inria-serif-regular">Nikia Enterprises LLC</p>
+            </div>
+            <div id="dropdown-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.5rem] h-[1.5rem] fill-black" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"></path></svg>
+            </div>
+        </nav>
+        <div class="px-8 pb-4 flex flex-col gap-2 hidden" id="nav-dropdown">
+            <a href="#" class="text-md font-karla p-2 font-bold">Home</a>
+            <a href="schedule.html" class="text-md font-karla p-2">Book Nikia</a>
+            <a href="about.html" class="text-md font-karla p-2">Meet Your Notary</a>
+        </div>
+        <div class="px-8" name="free-padding-x">
+            <div id="nav-border" class="border-[0.5px] border-greyed w-100 h-[1px]"></div>
+        </div>
+        <div id="section-container" class="flex flex-col gap-16">
+            <section class="px-8 mt-16 flex flex-col" id="hero">
+                <h1 class="font-inria-serif-regular text-5xl my-7 ">Sign with Confidence</h1>
+                <p class="font-karla text-md">Trusted mobile rotary serving Chicago and South Suburbs - we come to you, on your schedule</p>
+                <button class="bg-white text-primary text-lg border-solid border-2 border-primary rounded-lg mt-6 py-5 font-inria-serif-regular">Book Now</button>
+            </section>
+            <section class="px-8 my-6 flex flex-col" id="what-we-do">
+                <h3 class="font-inria-serif-regular text-3xl mb-5">What we do</h3>
+                <p class="text-md font-karla">We provide fast, reliable notarization for personal, legal, and business documents. From real estate closings to power of attorney forms, we make signing simple, secure, and stress-free.</p>
+                <a href="about.html" class="my-4 font-bold text-primary font-inria-serif-regular">Meet the C.E.O  &gt;&gt;</a>
+            </section>
+            <section class="px-8 my-6 flex flex-col" id="how-it-works">
+                <h3 class="font-inria-serif-regular text-3xl mb-8">How it works</h3>
+                <div class=" flex flex-row gap-4 justify-start items-center">
+                    <span class="text-center text-primary w-[3rem] h-[3rem] border-4 border-primary rounded-full font-inria-serif-regular text-4xl">1</span>
+                    <p class="text-md font-karla">Book your appointment</p>
+                </div>
+                <div class="flex flex-row gap-4 my-4 justify-start items-center">
+                    <span class="text-center text-primary w-[3rem] h-[3rem] border-4 border-primary rounded-full font-inria-serif-regular text-4xl">2</span>
+                    <p class="text-md font-karla">Meet your Notary</p>
+                </div>
+                <div class="flex flex-row gap-4 justify-start items-center">
+                    <span class="text-center text-primary w-[3rem] h-[3rem] border-4 border-primary rounded-full font-inria-serif-regular text-4xl">3</span>
+                    <p class="text-md font-karla">Get it Notarized</p>
+                </div>
+                <a href="schedule.html" class="mt-8">
+                    <button class="bg-primary text-white text-lg rounded-lg w-full py-5 font-inria-serif-regular">Book Now</button>
+                </a>
+            </section>
+            <section id="testimonies" class="px-8 py-28 flex flex-col justify-center items-center">
+                <div id="stars" class="flex flex-row gap-2 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" fill-current="text-primary"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"></path></svg>
+                </div>
+                <p class="text-2xl text-center font-karla my-4 ">Nikia Enterprises LLC brings a reassuring presence and meticulous eye to each document she handles.</p>
+                <p class="text-md font-karla">Schwartz Jambois</p>
+                <p class="text-sm text-greyed my-4 font-karla">Law Firm</p>
+            </section>
+        </div>
+        <footer class="p-8 gap-8 flex flex-col bg-primary">
+            <div id="links" class="flex flex-col">
+                <h4 class="text-2xl text-white font-inria-serif-regular my-4">Links</h4>
+                <a href="#" class="text-md text-white text-bold font-karla font-bold">Home</a>
+                <a href="schedule.html" class="text-md my-2 text-greyed font-karla">Book Nikia</a>
+                <a href="about.html" class="text-md text-greyed font-karla">Meet your Notary</a>
+            </div>
+            <div id="contact-info">
+                <h4 class="text-2xl text-white font-inria-serif-regular my-4">Contact</h4>
+                <div class="flex flex-row items-center gap-3">
+                    <span class="w-[2rem] h-[2rem] bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/></svg>
+                    </span>
+                    <p class="text-md text-white font-karla">312 966-9151</p>
+                </div>
+                <div class="flex flex-row items-center gap-3">
+                    <span class="w-[2rem] h-[2rem] bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M352 348.4C416.1 333.9 464 276.5 464 208C464 128.5 399.5 64 320 64C240.5 64 176 128.5 176 208C176 276.5 223.9 333.9 288 348.4L288 544C288 561.7 302.3 576 320 576C337.7 576 352 561.7 352 544L352 348.4zM328 160C297.1 160 272 185.1 272 216C272 229.3 261.3 240 248 240C234.7 240 224 229.3 224 216C224 158.6 270.6 112 328 112C341.3 112 352 122.7 352 136C352 149.3 341.3 160 328 160z"/></svg>
+                    </span>
+                    <p class="text-white my-2 font-karla text-md">Mobile Notary Services</p>
+                </div>
+                <div class="flex flex-row items-center gap-3">
+                    <span class="w-[2rem] h-[2rem] bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="fill-primary"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+                    </span>
+                    <p class="text-white font-karla text-md ">DejahCobbs2016@gmail.com</p>
+                </div>
+            </div>
+            <div id="copyright" class="mt-8 flex flex-row justify-center">
+                <p class="text-white font-karla">Nikia Enterprises LLC</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/nav-dropdown.js"></script>
+    </body>
+</html>
