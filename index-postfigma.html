@@ -14,6 +14,7 @@
                     colors: {
                     primary: '#1e40af', // Deep blue
                     accent: '#f59e0b',  // Amber
+                    greyed: 'grey'
                     },
                 },
             },
@@ -21,6 +22,69 @@
         </script>
     </head>
     <body>
-        
+        <nav class="flex flex-row">
+            <div id="logo-title-group" class="p-4 flex flex-row justify-around">
+                <img src="imgs/nikia-logo-min.png" alt="">
+                <p class="text-sm">Nikia Enterprises LLC</p>
+            </div>
+            <div id="dropdown-btn"></div>
+        </nav>
+        <section class="px-8 my-6 flex flex-col" id="hero">
+            <h1 class="text-5xl">Sign with Confidence</h1>
+            <p class="text-md">Trusted mobile rotary serving Chicago and South Suburbs - we come to you, on your schedule</p>
+            <button class="bg-white">Book Now</button>
+        </section>
+        <section class="px-8 my-6 flex flex-col" id="what-we-do">
+            <h3 class="text-lg">What we do</h3>
+            <p class="text-md">We provide fast, reliable notarization for personal, legal, and business documents. From real estate closings to power of attorney forms, we make signing simple, secure, and stress-free.</p>
+            <a href="about.html">Meet the C.E.O >></a>
+        </section>
+        <section  class="px-8 my-6 flex flex-col" id="how-it-works">
+            <div class="px-8 flex flex-row justify-center items-center">
+                <span class="text-xl">1</span>
+                <p class="text-md">Book your appointment</p>
+            </div>
+            <div class="px-8 flex flex-row justify-center items-center">
+                <span class="text-xl">2</span>
+                <p class="text-md">Meet your Notary</p>
+            </div>
+            <div class="px-8 flex flex-row justify-center items-center">
+                <span class="text-xl">3</span>
+                <p class="text-md">Get it Notarized</p>
+            </div>
+            <a href="schedule.html"><button class="bg-primary w-100 p-2">Book Now</button></a>
+        </section>
+        <section id="testimonies" class="px-8 my-6 flex flex-col justify-center items-center">
+            <div id="stars"></div>
+            <p class="text-lg">Nikia Enterprises LLC brings a reassuring presence and meticulous eye to each document she handles.</p>
+            <p class="text-md">Schwartz Jambois</p>
+            <p class="text-sm text-secondary">Law Firm</p>
+        </section>
+        <footer class="px-8 flex flex-col bg-primary">
+            <div id="links" class="flex flex-col">
+                <h4 class="text-lg">Links</h4>
+                <a href="#" class="text-white">Home</a>
+                <a href="schedule.html" class="text-greyed">Book Nikia</a>
+                <a href="about.html" class="text-greyed">Meet your Notary</a>
+            </div>
+            <div id="contact-info">
+                <h4 class="text-lg">Contact</h4>
+                <div class="flex flex-row">
+                    <span></span>
+                    <p class="text-white">312 966-9151</p>
+                </div>
+                <div class="flex flex-row">
+                    <span></span>
+                    <p class="text-white">Mobile Notary Services</p>
+                </div>
+                <div class="flex flex-row">
+                    <span></span>
+                    <p class="text-white">DejahCobbs2016@gmail.com</p>
+                </div>
+            </div>
+            <div id="copyright" class="flex flex-row justify-center">
+                <p class="text-white">Nikia Enterprises LLC</p>
+            </div>
+        </footer>
     </body>
 </html>
